@@ -6,8 +6,6 @@ dist/
 *.tsbuildinfo
 
 # Environment
-.env
-.env.local
 .env.*.local
 
 # Lefthook per-developer overrides (not shared; see lefthook.yml for shared hooks)
@@ -26,7 +24,6 @@ docs/images/
 videos/
 
 # IDE
-.vscode/
 .idea/
 *.swp
 *.swo
@@ -188,3 +185,7 @@ tmp/
 
 # Local Chrome-for-Testing downloads (large binaries, never commit)
 chrome/
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+config.bat
