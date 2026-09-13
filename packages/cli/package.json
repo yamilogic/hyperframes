@@ -1,7 +1,7 @@
 {
   "name": "@hyperframes/cli",
   "version": "0.8.36",
-  "description": "HyperFrames CLI — create, preview, and render HTML video compositions",
+  "description": "HyperFrames CLI \u2014 create, preview, and render HTML video compositions",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
@@ -19,12 +19,12 @@
   "type": "module",
   "scripts": {
     "test": "vitest run",
-    "dev": "tsx src/cli.ts",
-    "build": "bun run build:fonts && tsup && bun run build:runtime && bun run build:beat-analyzer && bun run build:copy",
-    "build:fonts": "node scripts/build-fonts.mjs",
-    "build:runtime": "tsx scripts/build-runtime.ts",
-    "build:beat-analyzer": "node scripts/build-beat-analyzer.mjs",
-    "build:copy": "node scripts/build-copy.mjs",
+    "dev": "node init && tsx src/cli.ts",
+    "build": "node init && bun run build:fonts && tsup && bun run build:runtime && bun run build:beat-analyzer && bun run build:copy",
+    "build:fonts": "node init && node scripts/build-fonts.mjs",
+    "build:runtime": "node init && tsx scripts/build-runtime.ts",
+    "build:beat-analyzer": "node init && node scripts/build-beat-analyzer.mjs",
+    "build:copy": "node init && node scripts/build-copy.mjs",
     "typecheck": "tsc --noEmit",
     "gen:skills-manifest": "tsx scripts/gen-skills-manifest.ts",
     "gen:agent-dirs": "tsx scripts/sync-agent-dirs.ts"
